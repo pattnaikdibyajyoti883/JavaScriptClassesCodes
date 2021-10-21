@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Event</title>
+</head>
+<body>
+   <form action="" onsubmit="return submitEvent()">
+    <label for="Input">Input</label>
+    <input type="text" id="i1">
+    <button type="submit">Submit</button>
+   </form>
+    <script>
+        function submitEvent()
+        {
+            console.log("Form Submitted");
+            document.getElementById("i1").style.backgroundColor="yellow";
+        }
+    </script>
+</body>
+</html>

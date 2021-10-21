@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Event</title>
+</head>
+<body>
+   <form action="" onreset="return resetEvent()">
+    <label for="Input">Input</label>
+    <input type="text" id="i1">
+    <button type="reset">Cancel</button>
+   </form>
+    <script>
+        function resetEvent()
+        {
+            console.log("Data reset done successfully");
+            document.getElementById("i1").style.backgroundColor="yellow";
+        }
+    </script>
+</body>
+</html>
