@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>query selector all</title>
+    <style>
+        *{
+            margin: 5px;
+        }
+        .class1{
+            border: lawngreen 2px groove;
+            
+        }
+        .class2{
+            border: fuchsia 3px groove;
+        }
+        #id1{
+            border: firebrick 2px groove;
+        }
+        #id2{
+            border: pink 2px groove;
+        }
+    </style>
+</head>
+<body>
+    <p class="class1">Paragraph-1</p>
+    <p class="class2">Paragraph-2</p>
+    <p id="id1">Paragraph-3</p>
+    <p id="id2">Paragraph-4</p>
+
+    <div id="id1">Division-1</div>
+    <div class="class1">Division-2</div>
+    <div class="class2">Division-3</div>
+    <div id="id2">Division-4</div>
+
+    <span id="id1">Span-1</span>
+    <span class="class1">Span-2</span>
+    <span class="class2">Span-3</span>
+    <span id="id2">Span-4</span>
+
+    <script>
+        var res = document.querySelectorAll(".class1");
+        for(let ele of res){
+            ele.style.color="red";
+        }
+        var res1 = document.querySelectorAll("#id1");
+        for(let ele of res1){
+            ele.style.backgroundColor = "purple";
+        }
+        var res2 = document.querySelectorAll("span");
+        for(let ele of res2){
+            ele.style.backgroundColor = "grey";
+        }
+    </script>
+</body>
+</html>
