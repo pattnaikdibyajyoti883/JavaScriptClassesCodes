@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2>This is First Heading</h2>
+    <p>This is First paragraph</p>
+    <h2>This is Second Heading</h2>
+    <p>This is Second paragraph</p>
+    <h2>This is Third Heading</h2>
+    <p>This is Third paragraph</p>
+    <div>
+        <button id="btnCount">H2 Count</button>
+    </div>
+    <script>
+        let button = document.getElementById("btnCount");
+        button.addEventListener('click',()=>
+        {
+            let headings = document.getElementsByTagName('h2');
+            alert("The number of h2 tags in the web page are : " +headings.length)
+        })
+    </script>
+</body>
+</html>
